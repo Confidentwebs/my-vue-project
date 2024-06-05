@@ -1,8 +1,8 @@
 <template>
   <div>
-    <input v-model="repoName" placeholder="Repository Name" />
-    <button @click="createRepo">Create Repo</button>
-    <button @click="deleteRepo">Delete Repo</button>
+    <input v-model="repoName" placeholder="Repository Name" style="margin-left: 5%;"/>
+    <button @click="createRepo" >Create Repo</button>
+    <button @click="deleteRepo" style="float: right; margin-right: 5%;">Delete Repo</button>
     <p v-if="errorMessage">{{ errorMessage }}</p>
   </div>
 </template>
@@ -31,8 +31,3 @@ const createRepo = async () => {
   }
 };
 </script>
-<style scoped>
-:root {
-margin-left: 5%;
-}
-</style>
