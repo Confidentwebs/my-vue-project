@@ -31,3 +31,8 @@ const createRepo = async () => {
   }
 };
 </script>
+<style scoped>
+:root {
+margin-left: 5%;
+}
+</style>
